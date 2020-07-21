@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1440px" height="900px" viewBox="0 0 1440 900" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <rect width="1440" height="900" id="artboard_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#artboard_1" clip-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="MacBook-Pro-15&quot;" clip-path="url(#clip_1)">
+    <use xlink:href="#artboard_1" stroke="none" fill="#01152A" fill-opacity="0" />
+    <g id="Pattern" transform="translate(0 -14)">
+      <path d="M1 0L1 928" id="Line" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(49 0)" id="Line-Copy" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(98 0)" id="Line-Copy-2" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(147 0)" id="Line-Copy-3" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(196 0)" id="Line-Copy-4" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(245 0)" id="Line-Copy-5" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(294 0)" id="Line-Copy-6" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(343 0)" id="Line-Copy-7" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(392 0)" id="Line-Copy-8" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(441 0)" id="Line-Copy-9" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(490 0)" id="Line-Copy-10" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(539 0)" id="Line-Copy-11" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(588 0)" id="Line-Copy-12" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(637 0)" id="Line-Copy-13" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(686 0)" id="Line-Copy-14" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(735 0)" id="Line-Copy-15" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+      <path d="M1 0L1 928" transform="translate(784 0)" id="Line-Copy-16" fill="none" stroke="#686868" stroke-opacity="0.0392156877" stroke-width="3" />
+    </g>
+  </g>
+</svg>
