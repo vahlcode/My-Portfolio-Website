@@ -13,7 +13,7 @@
             "type": "Web Development",
             "image": "./Images/Portfolio.png",
             "description": "A website displaying some of my works, my skills and other important information about my career as a Frontend Software Engineer.",
-            "cta": {"link": "https://vahlcode.netlify.app", "git": "https://github.com/vahlcode/Radius-Puppy"},
+            "cta": {"link": "https://vahlcode.vercel.app", "git": "https://github.com/vahlcode/Radius-Puppy"},
             "tools": ["HTML", "CSS", "Javascript", "React", "Git", "Netlify", "Babel"]
         },
         {
@@ -102,7 +102,7 @@
             "end": 2019,
             "role": "Front-end Web Developer, Brand Identity Designer",
             "logo": "./Images/default.png",
-            "duty": ["Wrote well designed, testable, efficient code by using best software development practices", "Created website layout/user interface by using standard HTML/CSS practices", "Boosted web traffic by improving navigation, minifying codes and media assets."]
+            "duty": ["Wrote well designed, testable, efficient code by using best software development practices.", "Created website layout/user interface by using standard HTML/CSS practices.", "Boosted web traffic by improving navigation, minifying codes and media assets."]
         }
     ],
     "volunteer": [
@@ -112,7 +112,7 @@
             "end": "31 Aug. 2020",
             "role": "Front-end Web Developer and Graphic Designer",
             "logo": "./Images/TSN.png",
-            "duty": ["Designed the brand identity.", "Provided technical support to the media and publicity team.", "Ensured that the website is up and running.", "Created and designed the website using WordPresss."]
+            "duty": ["Designed the brand identity.", "Provided technical support to the media and publicity team.", "Ensured that the website is up and running.", "Created and designed the website using WordPress."]
         },
         {
             "company": "Rubies Of Care and Compassion",
@@ -120,7 +120,7 @@
             "end": 2020,
             "role": "Front-end Web Developer and Designer",
             "logo": "./Images/rocc.jpeg",
-            "duty": ["Designed the brand identity.", "Provided technical support to the media and publicity team.", "Ensured that the website is up and running.", "Created and designed the website using WordPresss."]
+            "duty": ["Designed the brand identity.", "Provided technical support to the media and publicity team.", "Ensured that the website is up and running.", "Created and designed the website using WordPress."]
         }
     ]
 }
