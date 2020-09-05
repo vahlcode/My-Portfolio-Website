@@ -13,7 +13,7 @@
             "type": "Web Development",
             "image": "./Images/Portfolio.png",
             "description": "A website displaying some of my works, my skills and other important information about my career as a Frontend Software Engineer.",
-            "cta": {"link": "https://vahlcode.vercel.app", "git": "https://github.com/vahlcode/Radius-Puppy"},
+            "cta": {"link": "https://vahlcode.vercel.app", "git": "https://github.com/vahlcode/my-portfolio-website"},
             "tools": ["HTML", "CSS", "Javascript", "React", "Git", "Netlify", "Babel"]
         },
         {
