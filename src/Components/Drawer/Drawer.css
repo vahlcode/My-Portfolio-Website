@@ -34,7 +34,8 @@
 }
 
 .drawer>.main-content>.header>button {
-    padding: 10px;
+    padding: 10px 16px;
+    font-size: 20px;
     color: var(--font-color);
     background: none;
     border: none;
