@@ -6,7 +6,7 @@
             "image": "./Images/RemoteYes.png",
             "description": "A web application that helps developers, product designers and other tech workers find remote jobs all over the world.",
             "cta": {"link": "https://remote-yes.vercel.app", "git": "https://github.com/vahlcode/remote-yes"},
-            "tools": ["HTML", "CSS", "Javascript", "React", "Vercel", "Git", "Babel"]
+            "tools": ["HTML", "CSS", "Javascript", "React", "Vercel", "Git"]
         },
         {
             "title": "My Portfolio Website Design",
@@ -14,7 +14,7 @@
             "image": "./Images/Portfolio.png",
             "description": "A website displaying some of my works, my skills and other important information about my career as a Frontend Software Engineer.",
             "cta": {"link": "https://vahlcode.vercel.app", "git": "https://github.com/vahlcode/my-portfolio-website"},
-            "tools": ["HTML", "CSS", "Javascript", "React", "Git", "Netlify", "Babel"]
+            "tools": ["HTML", "CSS", "Javascript", "React", "Vercel", "Git"]
         },
         {
             "title": "Radius Puppy",
@@ -87,7 +87,7 @@
             "end": "Date",
             "role": "Front-end Web Developer and Designer",
             "logo": "./Images/sftv.png",
-            "duty": ["Provide technical support to the media team.", "Ensure that the website is up and running.", "Created and designed the website using WordPresss."]
+            "duty": ["Provide technical support to the media team.", "Ensure that the website is up and running.", "Created and designed the website using WordPress."]
         },
         {
             "company": "Freelancer",
