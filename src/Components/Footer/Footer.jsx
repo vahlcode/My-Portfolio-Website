@@ -9,7 +9,7 @@ class Footer extends React.Component {
                     <a href="mailto:valentineelum@gmail.com"><span className="icon icon-moonmail4"></span> Hire Me</a>
                     <ul className="socials">
                         <li>
-                            <a href="https://drive.google.com/file/d/1dAtzuqFjpkXQ9lsSs_Y2JMWmY6PszuNq" target="_blank" rel="noopener noreferrer">
+                            <a href="./vahl-resume.pdf" target="_blank" rel="noopener noreferrer">
                                 <span className="icon icon-moonfile-pdf"></span>
                             </a>
                         </li>
