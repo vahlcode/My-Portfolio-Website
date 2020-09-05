@@ -1,4 +1,20 @@
 :root {
+  --primary-color: #2c88eb;
+  --secondary-color: #1FB94D;
+  --heading-color: #dde7f1;
+  --font-color: #9aa1a8;
+  --dark-font-color: #01152A;
+  --border-color: #01152A;
+  --header-border-color: #01152A;
+  --background-color: #01152A;
+  --light-background-color: #060f1a;
+  --input-font-color: #3a3d3f;
+  --card-shadow-color: #0c151d;
+  --card-font-color: #eeeeee;
+  --card-tags-color: #cdd1d6;
+}
+
+[data-theme="light"] {
   --primary-color: #0075F5;
   --secondary-color: #1FB94D;
   --heading-color: #01152A;
@@ -7,23 +23,10 @@
   --border-color: #e7edf3;
   --header-border-color: #f1f1f1;
   --background-color: #ffffff;
-  --light-background-color: #f2f5f8;
+  --light-background-color: #d7e1eb;
   --input-font-color: #b1b1b1;
   --card-shadow-color: #e4e8ec;
-}
-
-[data-theme="dark"] {
-  --primary-color: #2c88eb;
-  --secondary-color: #1FB94D;
-  --heading-color: #dde7f1;
-  --font-color: #eeeeee;
-  --dark-font-color: #01152A;
-  --border-color: #01152A;
-  --header-border-color: #01152A;
-  --background-color: #01152A;
-  --light-background-color: #060f1a;
-  --input-font-color: #3a3d3f;
-  --card-shadow-color: #1d252c;
+  --card-font-color: #fcf9f9;
 }
 
 ::-webkit-scrollbar {
@@ -49,7 +52,6 @@
   margin: 0;
   box-sizing: border-box;
   outline: none;
-  max-width: 100%;
   font-family: 'Poppins';
 }
 
@@ -57,12 +59,17 @@ body {
   background: var(--background-color);
   color: var(--font-color);
   overflow-x: hidden!important;
+  border: 5px solid var(--primary-color);
+  overflow-x: hidden;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 30px;
   color: var(--heading-color);
   margin-bottom: 20px;
+  text-align: left;
+  text-transform: lowercase;
+  font-family: "Montserrat";
 }
 
 img {
@@ -71,28 +78,34 @@ img {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 300;
   line-height: 1.5em;
   letter-spacing: 0.025em;
   color: var(--font-color);
+  text-align: left;
 }
 
-.hide{
+a:hover {
+  cursor: pointer !important;
+}
+
+.hide {
   display: none;
 }
 
-.show{
+.show {
   display: block;
 }
 
 @media only screen and (min-width: 600px) {
   h1 {
-    font-size: 43px;
+    font-size: 33px;
     color: var(--heading-color);
     margin-bottom: 20px;
   }
   p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5em;
     letter-spacing: 0.025em;
     color: var(--font-color);
@@ -101,14 +114,16 @@ p {
 
 @media only screen and (min-width: 961px) {
   h1 {
-    font-size: 63px;
+    font-size: 43px;
     color: var(--heading-color);
     margin-bottom: 20px;
+    text-align: left;
   }
   p {
-    font-size: 18px;
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 1.8em;
     letter-spacing: 0.025em;
     color: var(--font-color);
+    text-align: left;
   }
 }

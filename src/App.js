@@ -1,54 +1,82 @@
 import React from 'react';
 import './App.css';
-import Header from "./Components/Header";
-import Hero from "./Components/Hero";
-import Experience from "./Components/Experience";
-import Skills from "./Components/Skills";
-import Tools from "./Components/Tools";
-import Portfolio from "./Components/Portfolio";
-import Footer from "./Components/Footer";
+import Header from "./Components/Header/Header";
+import Hero from "./Components/Hero/Hero";
+import Experience from "./Components/Experience/Experience";
+import Skills from "./Components/Skills/Skills";
+import Portfolio from "./Components/Portfolio/Portfolio";
+import Footer from "./Components/Footer/Footer";
+import {Drawer} from "./Components/Drawer/Drawer";
+import Preloader from "./Components/Preloader/Preloader"
+import Volunteer from "./Components/Volunteer/Volunteer"
 import "./Assets/Icons/icon.css";
-import works from "./Experience";
-import volunteers from "./Volunteers";
-import skills from "./Skills";
-import tools from "./Tools";
-import isInViewPort from "./Assets/Js/isInViewPort";
-import "./Assets/css/animate.css";
 
 class App extends React.Component {
-  constructor(props){
-    super(props)
-    this.updateTheme = this.updateTheme.bind(this);
+  constructor(){
+    super();
+    this.state = {
+      loaded: false,
+      drawContent: [],
+      draw: false
+    }
+    this.updateTheme = this.updateTheme.bind(this)
+    this.Draw = this.Draw.bind(this)
   }
 
   componentDidMount() {
-    this.updateTheme();
+    //Updating themes once component mounts
+    this.updateTheme()
 
-    window.addEventListener('scroll', (e) => {
-      const element = document.querySelectorAll('section');
-      for (let i = 0; i < element.length; i++) {
-        const div = element[i];
-        if (isInViewPort(div)) {
-          div.classList.add('fadeInUp');
-          div.classList.replace('hide', 'show');
-          div.addEventListener('animationend', () => {
-            div.classList.remove('fadeInUp');
-          })
-        }
-        
-      }
-    })
+    const body = document.querySelector('body')
+    const root = document.querySelector('#root')
+    const drawer = document.querySelector('.drawer')
 
-    const body = document.querySelector('body');
+    // Disabling scroll until elements are fully loaded
     document.onreadystatechange = () => {
       if (document.readyState !== "complete") {
-        this.setState({...this.state, loaded: false});
-        body.style.overflow = "hidden";
+        this.setState({...this.state, loaded: false}, () => {
+          body.style.overflow = "hidden"
+          root.style.overflow = "hidden"
+        })
       } else{
-        this.setState({...this.state, loaded: true});
-        body.style.overflow = "auto";
+        this.setState({...this.state, loaded: true}, () => {
+          body.style.overflow = "auto"
+          root.style.overflow = "auto"
+          drawer.style.display = "none"
+        })
       }
     }
+
+    const CLOSE_DRAWER = document.querySelector(".drawer>.main-content>.header>button")
+
+    CLOSE_DRAWER.addEventListener("click", () => {
+      this.setState({
+        draw: !this.state.draw,
+        drawContent: []
+      }, () => {
+        body.style.overflow = "auto"
+        root.style.overflow = "auto"
+      })
+      
+    })
+  }
+
+  Draw (i) {
+    const body = document.querySelector('body')
+    const root = document.querySelector('#root')
+
+    this.setState({...this.state, loaded: false}, () => {
+      body.style.overflow = "hidden"
+      root.style.overflow = "hidden"
+    })
+
+    fetch("./data.json")
+    .then(response => response.json())
+    .then(data => {
+        this.setState({...this.state, loaded: true});
+        this.setState({drawContent: data.portfolio[i], draw: !this.state.draw})
+    })
+    .catch(error => console.log(error))
   }
 
   updateTheme() {
@@ -57,34 +85,33 @@ class App extends React.Component {
 
     if (currentTheme) {
         document.documentElement.setAttribute('data-theme', currentTheme);
-        if (currentTheme === 'dark') {
+        if (currentTheme === 'light') {
             toggleSwitch.checked = true;
         }
     }
   }
 
   render() {
+    const {loaded, drawContent, draw} = this.state
     return (
       <div className="App">
         <Header />
         <Hero />
+        <Portfolio 
+          heading="My Works"
+          paragraph="These are some of the jobs I've done in the past."
+          draw={this.Draw}
+        />
+        <Skills/>
         <Experience 
           heading="My Experience" 
-          paragraph="I have 5 years of experience designing and developing web applications and 2+ years in designing brand identities." 
-          experience={works}
         />
-        <Experience 
-          heading="Volunteers" 
-          paragraph="I have volunteered to help non-governmental organizations in Africa distribute help to give help to those who need help and promote education and technology." 
-          experience={volunteers}
-        />
-        <Skills skills={skills}/>
-        <Tools tools={tools}/>
-        <Portfolio 
-          heading="Job I've Done"
-          paragraph="These are some of the jobs I've done in the past."
+        <Volunteer 
+          heading={"Organizations \nI've Volunteered for"}
         />
         <Footer />
+        <Drawer content={drawContent} draw={draw}/>
+        <Preloader loaded={loaded}/>
       </div>
     )
   }

@@ -1,0 +1,60 @@
+.skills {
+    padding: 50px 20px;
+    background: var(--background-color);
+}
+
+.skills-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.skill-card>ul>li {
+    display: flex;
+    margin-bottom: 10px;
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.skill-card.skill-card>ul>li::before {
+    content: "☑";
+    color: var(--primary-color);
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .skills {
+        padding: 50px 70px;
+        background: var(--background-color) url("../../Assets/Images/pattern.svg");
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .skills-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    .skills {
+        padding: 100px 70px;
+        background: var(--background-color) url("../../Assets/Images/pattern.svg");
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .skills>.entry>p {
+        max-width: 70%;
+    }
+    .skills-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}

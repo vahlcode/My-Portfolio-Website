@@ -1,0 +1,190 @@
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    text-align: left;
+}
+
+.drawer>.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: var(--background-color);
+    filter: opacity(0.9);
+    -webkit-filter: opacity(0.9);
+    z-index: 10000;
+}
+
+.drawer>.main-content {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--background-color);
+    z-index: 10000;
+    overflow: auto;
+    transition: .8s;
+}
+
+.drawer>.main-content>.header>button {
+    padding: 10px;
+    color: var(--font-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.drawer>.main-content>.image {
+    height: 200px;
+    width: 100%;
+}
+
+.drawer>.main-content>.image>img {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.drawer>.main-content>.title {
+    padding: 20px 20px;
+}
+
+.drawer>.main-content>.title>h3 {
+    font-size: 25px;
+    color: var(--heading-color);
+}
+
+.drawer>.main-content>.description {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.drawer>.main-content>.tools {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.drawer>.main-content>.tools>ul {
+    display: flex;
+}
+
+.drawer>.main-content>.tools li {
+    color: var(--font-color);
+    list-style: none;
+    font-size: 11px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.drawer>.main-content>.tools li:last-of-type {
+    margin-right: 0;
+}
+
+.drawer>.main-content>.ctas {
+    padding: 0 20px;
+}
+
+.drawer>.main-content>.ctas>ul {
+    display: flex;
+}
+
+.drawer>.main-content>.ctas li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.drawer>.main-content>.ctas li:last-of-type {
+    margin-right: 0;
+}
+
+.drawer>.main-content>.ctas li>a {
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.drawer>.main-content>.ctas li>a>span {
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    .drawer {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        text-align: left;
+    }
+    
+    .drawer>.overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: var(--background-color);
+        filter: opacity(0.9);
+        -webkit-filter: opacity(0.9);
+        z-index: 10000;
+    }
+    
+    .drawer>.main-content {
+        position: relative;
+        left: 40%;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 60%;
+        background: var(--background-color);
+        z-index: 10000;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    .drawer {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        text-align: left;
+    }
+    
+    .drawer>.overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: var(--background-color);
+        filter: opacity(0.9);
+        -webkit-filter: opacity(0.9);
+        z-index: 10000;
+    }
+    
+    .drawer>.main-content {
+        position: relative;
+        left: 70%;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 30%;
+        background: var(--background-color);
+        z-index: 10000;
+    }
+}

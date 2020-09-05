@@ -1,0 +1,126 @@
+{
+    "portfolio": [
+        {
+            "title": "Remote Yes!",
+            "type": "Web Development",
+            "image": "./Images/RemoteYes.png",
+            "description": "A web application that helps developers, product designers and other tech workers find remote jobs all over the world.",
+            "cta": {"link": "https://remote-yes.vercel.app", "git": "https://github.com/vahlcode/remote-yes"},
+            "tools": ["HTML", "CSS", "Javascript", "React", "Vercel", "Git", "Babel"]
+        },
+        {
+            "title": "My Portfolio Website Design",
+            "type": "Web Development",
+            "image": "./Images/Portfolio.png",
+            "description": "A website displaying some of my works, my skills and other important information about my career as a Frontend Software Engineer.",
+            "cta": {"link": "https://vahlcode.netlify.app", "git": "https://github.com/vahlcode/Radius-Puppy"},
+            "tools": ["HTML", "CSS", "Javascript", "React", "Git", "Netlify", "Babel"]
+        },
+        {
+            "title": "Radius Puppy",
+            "type": "Web Development",
+            "image": "./Images/radius-puppy.png",
+            "description": "A web application that helps developers create beautiful shapes to be used on their web applications and landing pages using border radius.",
+            "cta": {"link": "https://radius-puppy.netlify.app", "git": "https://github.com/vahlcode/Radius-Puppy"},
+            "tools": ["HTML", "CSS", "Javascript", "React", "Netlify"]
+        },
+        {
+            "title": "Trunc Js",
+            "type": "Web Development",
+            "image": "./Images/TruncJs.png",
+            "description": "A JavaScript library for truncating strings. Suitable for making post excerpts.",
+            "cta": {"link": "https://truncjs.vercel.app", "git": "https://github.com/vahlcode/truncjs"},
+            "tools": ["HTML", "CSS", "Javascript", "React", "Vercel", "Git", "Babel"]
+        },
+        {
+            "title": "Read Count",
+            "type": "Web Development",
+            "image": "./Images/readCount.png",
+            "description": "A JavaScript library for estimating the time it would take to read a post.",
+            "cta": {"link": "https://readcount.vercel.app", "git": "https://github.com/vahlcode/read-count"},
+            "tools": ["HTML", "CSS", "Javascript", "React", "Vercel", "Git", "Babel"]
+        },
+        {
+            "title": "Unique Chars",
+            "type": "Web Development",
+            "image": "./Images/uniquechars.png",
+            "description": "A JavaScript library for generating unique strings, numbers and passwords.",
+            "cta": {"link": "https://uniquechars.vercel.app", "git": "https://github.com/vahlcode/uniquechars"},
+            "tools": ["HTML", "CSS", "Javascript", "React", "Vercel", "Git", "Babel"]
+        },
+        {
+            "title": "inkmbt",
+            "type": "Web Development",
+            "image": "./Images/inkmbt.png",
+            "description": "A JavaScript library for formatting numbers in K, B, T like Twitter.",
+            "cta": {"link": "https://inkmbt.vercel.app", "git": "https://github.com/vahlcode/inkmbt"},
+            "tools": ["HTML", "CSS", "Javascript", "React", "Vercel", "Git", "Babel"]
+        },
+        {
+            "title": "African Industrious Ladies",
+            "type": "Logo design",
+            "image": "./Images/AIL.png",
+            "description": "An organization of African ladies in business helping each other to grow and be independent.",
+            "cta": {"link": "https://behance.net/gallery/101179095/African-Industrious-Ladies-Brand-Identity-Design"},
+            "tools": ["Photoshop", "CorelDraw", "Lunacy"]
+        },
+        {
+            "title": "Phronexix World Logo Design",
+            "type": "Logo Design",
+            "image": "./Images/Phronexix.png",
+            "cta": {"link": "https://radius-puppy.netlify.app", "git": "https://github.com/vahlcode/Radius-Puppy"},
+            "tools": ["Photoshop", "CorelDraw", "Lunacy"]
+        }
+    ],
+    "skills" : {
+        "soft": ["Front-end", "Brand Design", "Communication", "Leadership"],
+        "languages": ["HTML", "CSS", "Javascript"],
+        "tools": ["Git", "React", "Git", "Redux"],
+        "backend": ["PHP", "WordPress", "Photoshop", "CorelDraw"]
+    },
+    "experience": [
+        
+        {
+            "company": "Desyn",
+            "start": 2019,
+            "end": "Date",
+            "role": "Front-end Web Developer",
+            "logo": "./Images/Desyn.png",
+            "duty": ["Write clean HTML, CSS and JavScript code, integrating design, extensions and third-party apps \naccording to web development plans.", "Test site compatibility across multiple browsers and devices, uncovering and debugging issues \nand addressing inconsistencies.", "Assemble and address technical and design requirements, integrating user-facing and front-end \nelements to maintain web presence effectiveness."]
+        },
+        {
+            "company": "Street Factor Tv",
+            "start": 2019,
+            "end": "Date",
+            "role": "Front-end Web Developer and Designer",
+            "logo": "./Images/sftv.png",
+            "duty": ["Provide technical support to the media team.", "Ensure that the website is up and running.", "Created and designed the website using WordPresss."]
+        },
+        {
+            "company": "Freelancer",
+            "start": 2015,
+            "end": 2019,
+            "role": "Front-end Web Developer, Brand Identity Designer",
+            "logo": "./Images/default.png",
+            "duty": ["Wrote well designed, testable, efficient code by using best software development practices", "Created website layout/user interface by using standard HTML/CSS practices", "Boosted web traffic by improving navigation, minifying codes and media assets."]
+        }
+    ],
+    "volunteer": [
+        {
+            "company": "TSN Africa",
+            "start": 2017,
+            "end": "31 Aug. 2020",
+            "role": "Front-end Web Developer and Graphic Designer",
+            "logo": "./Images/TSN.png",
+            "duty": ["Designed the brand identity.", "Provided technical support to the media and publicity team.", "Ensured that the website is up and running.", "Created and designed the website using WordPresss."]
+        },
+        {
+            "company": "Rubies Of Care and Compassion",
+            "start": 2019,
+            "end": 2020,
+            "role": "Front-end Web Developer and Designer",
+            "logo": "./Images/rocc.jpeg",
+            "duty": ["Designed the brand identity.", "Provided technical support to the media and publicity team.", "Ensured that the website is up and running.", "Created and designed the website using WordPresss."]
+        }
+    ]
+}

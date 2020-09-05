@@ -1,0 +1,45 @@
+.portfolio {
+    padding: 50px 20px;
+    background: var(--background-color);
+}
+
+.portfolio-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    grid-column-start: span;
+}
+
+@media only screen and (min-width: 600px) {
+    .portfolio {
+        padding: 50px 70px;
+        background: var(--background-color) url("../../Assets/Images/pattern.svg");
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .portfolio-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        grid-column-start: span;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    .portfolio {
+        padding: 100px 50px 100px 90px;
+        background: var(--background-color) url("../../Assets/Images/pattern.svg");
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .portfolio-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        grid-column-start: span;
+    }
+}
