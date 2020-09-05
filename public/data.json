@@ -63,13 +63,6 @@
             "description": "An organization of African ladies in business helping each other to grow and be independent.",
             "cta": {"link": "https://behance.net/gallery/101179095/African-Industrious-Ladies-Brand-Identity-Design"},
             "tools": ["Photoshop", "CorelDraw", "Lunacy"]
-        },
-        {
-            "title": "Phronexix World Logo Design",
-            "type": "Logo Design",
-            "image": "./Images/Phronexix.png",
-            "cta": {"link": "https://radius-puppy.netlify.app", "git": "https://github.com/vahlcode/Radius-Puppy"},
-            "tools": ["Photoshop", "CorelDraw", "Lunacy"]
         }
     ],
     "skills" : {
