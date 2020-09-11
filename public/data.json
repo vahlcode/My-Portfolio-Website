@@ -17,6 +17,14 @@
             "tools": ["HTML", "CSS", "Javascript", "React", "Vercel", "Git"]
         },
         {
+            "title": "Webovic",
+            "type": "Web Development",
+            "image": "./Images/Webvio.png",
+            "description": "An implementation of a landing page UI design. Credits - UIGarage",
+            "cta": {"link": "https://webov.netlify.app/", "git": "https://github.com/vahlcode/webvio-landing-page"},
+            "tools": ["HTML", "CSS", "Javascript", "React", "Netlify", "Git", "Gsap"]
+        },
+        {
             "title": "Radius Puppy",
             "type": "Web Development",
             "image": "./Images/radius-puppy.png",
