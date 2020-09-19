@@ -6,8 +6,15 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 class Hero extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            loaded: props.loaded
+        }
+    }
+
     componentDidMount() {
-        gsap.timeline({scrollTrigger:{
+        let TL = gsap.timeline({scrollTrigger:{
             trigger:".hero",
             start:"top 50%",
             end:"bottom top",
@@ -15,7 +22,16 @@ class Hero extends Component {
         }})
         .from(".image>img", {y: 100, opacity:0, ease:"back", duration:1}, "<1")
         .from(".about>*", {x:-100, opacity:0, ease:"back", duration:1, stagger: .2}, "<1")
+        TL.pause()
+        if (this.state.loaded) {
+            TL.play()
+        }
     }
+
+    componentWillReceiveProps({loaded}) {
+        this.setState({loaded})
+    }
+
     render() {
         return(
             <section className="hero animated fadeIn">

@@ -96,7 +96,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <Hero />
+        <Hero loaded={loaded} />
         <Portfolio 
           heading="My Works"
           paragraph="These are some of the jobs I've done in the past."
