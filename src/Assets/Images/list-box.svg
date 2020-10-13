@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="5px" height="5px" viewBox="0 0 5 5" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <desc>Created with Lunacy</desc>
-  <path d="M0 0L5 0L5 5L0 5L0 0Z" id="Rectangle" fill="none" stroke="#57D87C" stroke-width="5" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5" height="5" version="1.1" viewBox="0 0 5 5"><desc>Created with Lunacy</desc><path id="Rectangle" fill="none" stroke="#57D87C" stroke-width="5" d="M0 0L5 0L5 5L0 5L0 0Z"/></svg>
